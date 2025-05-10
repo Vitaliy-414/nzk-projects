@@ -3,40 +3,44 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Наші вироби</title>
+    <title>Наші меблі</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
-        h1 { text-align: center; color: #2a5d34; }
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px; }
-        .gallery img { width: 300px; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-        .buttons { text-align: center; margin-top: 40px; }
-        .buttons a {
-            background-color: #2a5d34;
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { text-align: center; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .item { text-align: center; width: 300px; }
+        .item img { width: 100%; border-radius: 8px; }
+        .buttons { text-align: center; margin-top: 30px; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
             color: white;
-            padding: 14px 28px;
-            margin: 0 15px;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 18px;
+            font-weight: bold;
         }
+        .green { background-color: #4CAF50; }
+        .yellow { background-color: #FFB800; }
     </style>
 </head>
 <body>
-    <h1>Наші вироби</h1>
+    <h1>Наші меблі</h1>
     <div class="gallery">
-        <img src="assets/photo1.jpg" alt="Виріб 1">
-        <img src="assets/photo2.jpg" alt="Виріб 2">
-        <img src="assets/photo3.jpg" alt="Виріб 3">
-        <img src="assets/photo4.jpg" alt="Виріб 4">
-        <img src="assets/photo5.jpg" alt="Виріб 5">
-        <img src="assets/photo6.jpg" alt="Виріб 6">
-        <img src="assets/photo7.jpg" alt="Виріб 7">
-        <img src="assets/photo8.jpg" alt="Виріб 8">
-        <img src="assets/photo9.jpg" alt="Виріб 9">
+        <div class="item"><img src="01_bavaria.jpg" alt="Ліжко Баварія"><div>Ліжко Баварія</div></div>
+        <div class="item"><img src="02_domenika.jpg" alt="Ліжко Домініка"><div>Ліжко Домініка</div></div>
+        <div class="item"><img src="03_oriella.jpg" alt="Ліжко Оріелла"><div>Ліжко Оріелла</div></div>
+        <div class="item"><img src="04_karina.jpg" alt="Ліжко Каріна (2-ярусне)"><div>Ліжко Каріна (2-ярусне)</div></div>
+        <div class="item"><img src="05_florida.jpg" alt="Комод Флоріда"><div>Комод Флоріда</div></div>
+        <div class="item"><img src="06_ore.jpg" alt="Комод Оре"><div>Комод Оре</div></div>
+        <div class="item"><img src="07_nightstand.jpg" alt="Тумбочка Оре"><div>Тумбочка Оре</div></div>
+        <div class="item"><img src="08_wardrobe.jpg" alt="Шафа класична"><div>Шафа класична</div></div>
+        <div class="item"><img src="09_desk.jpg" alt="Письмовий стіл"><div>Письмовий стіл</div></div>
+        <div class="item"><img src="10_dressing.jpg" alt="Туалетний столик"><div>Туалетний столик</div></div>
     </div>
     <div class="buttons">
-        <a href="https://nzk.com.ua" target="_blank">Перейти на сайт</a>
-        <a href="https://t.me/yourmanagerbot" target="_blank">Консультація з менеджером</a>
+        <a href="https://nzk.com.ua" class="btn green">Перейти на сайт</a>
+        <a href="https://t.me/nzkfurniture_bot" class="btn yellow">Консультація з менеджером</a>
     </div>
 </body>
 </html>
