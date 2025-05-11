@@ -2,32 +2,77 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог меблів</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding: 20px; text-align: center; }
-        img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .buttons { margin-top: 30px; }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 10px;
-            border-radius: 8px;
-            font-size: 18px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .green { background-color: #4CAF50; color: white; }
-        .yellow { background-color: #FFD700; color: black; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Жива карусель виробів</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .swiper {
+      width: 90%%;
+      max-width: 900px;
+      margin: auto;
+    }
+    .swiper-slide {
+      background: #fff;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .swiper-slide img {
+      width: 100%%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Наші меблі</h1>
-    <img src="vysualizatsiya_10foto.jpg" alt="Каталог меблів">
 
-    <div class="buttons">
-        <a href="https://nzk.com.ua" class="btn green">Перейти на сайт</a>
-        <a href="https://t.me/nzkfurniture_bot" class="btn yellow">Консультація з менеджером</a>
+  <h1>Карусель з кнопками</h1>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="1.jpg" alt="Стіл Орі"><p>Стіл "Орі"</p></div>
+      <div class="swiper-slide"><img src="2.jpg" alt="Ліжко Кентукі"><p>Ліжко "Кентукі"</p></div>
+      <div class="swiper-slide"><img src="3.jpg" alt="Тумба Монплезір"><p>Тумба "Монплезір"</p></div>
+      <div class="swiper-slide"><img src="4.jpg" alt="Ліжко Барбара"><p>Ліжко "Барбара"</p></div>
+      <div class="swiper-slide"><img src="5.jpg" alt="Комод 5-5-0"><p>Комод "5-5-0"</p></div>
     </div>
+
+    <!-- Кнопки -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
 </body>
 </html>
