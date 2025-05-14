@@ -3,35 +3,70 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Карусель виробів</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наші меблі</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            padding: 40px;
             text-align: center;
+            margin: 0;
+            padding: 20px;
         }
-        .carousel {
-            overflow-x: auto;
-            white-space: nowrap;
-            background: #fff;
-            border-radius: 12px;
-            padding: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        h2 {
+            margin-bottom: 30px;
         }
-        .carousel img {
-            max-height: 320px;
-            border-radius: 8px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-bottom: 30px;
         }
-        h1 {
-            color: #333;
+        .item {
+            max-width: 160px;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .green {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .orange {
+            background-color: #FFA500;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Наші 5 виробів</h1>
-    <div class="carousel">
-        <img src="karusel_5_vyrobiv.jpg" alt="Карусель виробів">
+    <h2>Наші меблі</h2>
+    <div class="grid">
+        <div class="item"><img src="ліжко-баварія.jpg" alt="Ліжко Баварія"><div>Ліжко Баварія</div></div>
+        <div class="item"><img src="ліжко-домініка.jpg" alt="Ліжко Домініка"><div>Ліжко Домініка</div></div>
+        <div class="item"><img src="ліжко-оріелла.jpg" alt="Ліжко Оріелла"><div>Ліжко Оріелла</div></div>
+        <div class="item"><img src="ліжко-каріна.jpg" alt="Ліжко Каріна (2-ярусне)"><div>Ліжко Каріна (2-ярусне)</div></div>
+        <div class="item"><img src="комод-флоріда.jpg" alt="Комод Флоріда"><div>Комод Флоріда</div></div>
+        <div class="item"><img src="комод-орі.jpg" alt="Комод Орі"><div>Комод Орі</div></div>
+        <div class="item"><img src="тумбочка-орі.jpg" alt="Тумбочка Орі"><div>Тумбочка Орі</div></div>
+        <div class="item"><img src="шафа-класична.jpg" alt="Шафа класична"><div>Шафа класична</div></div>
+        <div class="item"><img src="письмовий-стіл.jpg" alt="Письмовий стіл"><div>Письмовий стіл</div></div>
+        <div class="item"><img src="туалетний-столик.jpg" alt="Туалетний столик"><div>Туалетний столик</div></div>
+    </div>
+    <div class="buttons">
+        <a href="https://nzk.com.ua" class="green">Перейти на сайт</a>
+        <a href="https://t.me/NZKmanager" class="orange">Консультація з менеджером</a>
     </div>
 </body>
 </html>
