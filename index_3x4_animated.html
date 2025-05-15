@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Меблі з українською душею</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .slogan {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #2e7d32;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .image-block {
+            max-width: 95%;
+            height: auto;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 1s forwards;
+        }
+        .button-container {
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 2s forwards;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 18px;
+            color: white;
+            background-color: #388e3c;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background-color: #2e7d32;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slogan">Меблі з українською душею</div>
+        <img src="visual_3x4_optimized.jpg" alt="Візуалізація меблів" class="image-block">
+        <div class="button-container">
+            <a href="https://t.me/nzk_furniture_bot" class="button">Консультація з менеджером</a>
+            <a href="https://nzk.com.ua" class="button">Перейти на сайт NZK.com.ua</a>
+        </div>
+    </div>
+</body>
+</html>
