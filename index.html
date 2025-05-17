@@ -3,23 +3,57 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Баварія — натуральні меблі</title>
+    <title>NZK - З українською душею</title>
     <style>
-        body {
-            background-color: #fdfdf8;
-            font-family: sans-serif;
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            margin: 0;
+            padding: 0;
             text-align: center;
+        }}
+        .container {{
             padding: 20px;
-        }
-        img {
-            max-width: 100%;
+        }}
+        .slogan {{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }}
+        .image {{
+            max-width: 90%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }}
+        .buttons {{
+            margin-top: 20px;
+        }}
+        .btn {{
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #3c763d;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }}
+        .btn.secondary {{
+            background-color: #f0ad4e;
+        }}
     </style>
 </head>
 <body>
-    <img src="bavaria_ad.jpg" alt="Колекція Баварія — натуральні меблі">
+    <div class="container">
+        <div class="slogan">Зроблено з українською душею<br>Made with a Ukrainian soul</div>
+        <img src="furniture.jpg" alt="Меблі NZK" class="image">
+        <div class="buttons">
+            <a href="#" class="btn">Консультація з менеджером / Talk to a manager</a>
+            <a href="https://nzk.com.ua" class="btn secondary">Перейти на сайт NZK / Visit NZK website</a>
+        </div>
+    </div>
 </body>
 </html>
