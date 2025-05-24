@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Асортимент 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #28a745;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .buttons a.secondary {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Асортимент наших виробів</h1>
+    <div class="grid">
+
+        <div class="item">
+            <img src="vyrob1.jpg" alt="Виріб 1">
+            <p>Виріб 1</p>
+        </div>
+    
+        <div class="item">
+            <img src="vyrob2.jpg" alt="Виріб 2">
+            <p>Виріб 2</p>
+        </div>
+    
+        <div class="item">
+            <img src="vyrob3.jpg" alt="Виріб 3">
+            <p>Виріб 3</p>
+        </div>
+    
+        <div class="item">
+            <img src="vyrob4.jpg" alt="Виріб 4">
+            <p>Виріб 4</p>
+        </div>
+    
+    </div>
+    <div class="buttons">
+        <a href="https://nzk.com.ua" target="_blank">Перейти на сайт</a>
+        <a href="https://t.me/NZK_mebli_bot" target="_blank" class="secondary">Консультація з менеджером</a>
+    </div>
+</body>
+</html>
