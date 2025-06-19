@@ -2,23 +2,50 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Контактна форма</title>
+  <meta charset="UTF-8">
+  <title>Менеджер</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    h2 {
+      color: green;
+    }
+    form {
+      display: inline-block;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
 </head>
 <body>
-    <h2>Залиште свої дані і ми зателефонуємо вам</h2>
-    <form action="https://formspree.io/f/myzjpbde" method="POST">
-        <label>
-            Ваше ім’я:
-            <input type="text" name="name" required>
-        </label>
-        <br><br>
-        <label>
-            Ваш телефон:
-            <input type="tel" name="phone" required>
-        </label>
-        <br><br>
-        <button type="submit">Готово</button>
-    </form>
+  <h2>Залиште свої дані</h2>
+  <form action="https://formspree.io/f/mnqeqgkw" method="POST">
+    <input type="text" name="імʼя" placeholder="Ваше ім’я" required>
+    <input type="tel" name="телефон" placeholder="Ваш телефон" required>
+    <button type="submit">Готово!</button>
+  </form>
 </body>
 </html>
