@@ -1,28 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Form</title>
+    <title>Залиште свої контакти</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; padding: 40px; background-color: #f9f9f9; }
-        form { background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        label { display: block; margin-bottom: 15px; }
-        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
-        button { background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background-color: #218838; }
+        body {
+            font-family: sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        .form-container {
+            background: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="tel"] {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            color: #333;
+        }
     </style>
 </head>
 <body>
-    <form action="https://formspree.io/f/myzjpbde" method="POST">
-        <label>
-            Ваш Email:
-            <input type="email" name="email" required>
-        </label>
-        <label>
-            Ваше повідомлення:
-            <textarea name="message" required></textarea>
-        </label>
-        <button type="submit">Надіслати</button>
-    </form>
+    <div class="form-container">
+        <h2>Залиште свої контакти</h2>
+        <form action="https://formspree.io/f/mnqegvka" method="POST">
+            <input type="text" name="name" placeholder="Ваше ім'я" required><br>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required><br>
+            <button type="submit">Готово</button>
+        </form>
+    </div>
 </body>
 </html>
