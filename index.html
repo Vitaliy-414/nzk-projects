@@ -3,22 +3,61 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Меблі з вільхи і ясеня</title>
+    <title>NZK Бот</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: #fff;
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
+            background-color: #f5f5f5;
             text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 768px;
+            margin: auto;
+        }
+        .background-image {
+            width: 100%;
+            display: block;
+        }
+        .buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            background-color: #5c3a1a;
+        }
+        .menu {
+            background-color: #2e9f3b;
+            width: 100%;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <img src="bot-page-v2.jpg" alt="Меблі з вільхи і ясеня">
+    <div class="container">
+        <img src="bot_interface_page_fixed.png" alt="Меблі з вільхи та ясеня" class="background-image">
+        <div class="buttons">
+            <a href="https://t.me/nzk_helper_bot?start=catalog" class="button">Каталог</a>
+            <a href="https://t.me/nzk_helper_bot?start=bonus" class="button">Бонуси й гарантії</a>
+            <a href="https://t.me/nzk_helper_bot?start=menenger" class="button">Менеджер</a>
+            <a href="https://nzk.com.ua" class="button">Сайт</a>
+            <a href="https://t.me/nzk_helper_bot?start=menu" class="button menu">Меню</a>
+        </div>
+    </div>
 </body>
 </html>
