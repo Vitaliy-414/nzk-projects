@@ -1,74 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NZK Меблі Люкс</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      text-align: center;
-    }
-    .hero {
-      position: relative;
-    }
-    .hero img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .overlay {
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-      color: white;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 12px;
-      font-size: 24px;
-    }
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 20px;
-      gap: 15px;
-    }
-    .button {
-      padding: 15px 25px;
-      font-size: 16px;
-      background-color: #a0522d;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .menu-button {
-      background-color: #2e8b57;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>NZK Бот</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 768px;
+            margin: auto;
+        }
+        .background-image {
+            width: 100%;
+            display: block;
+        }
+        .buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            background-color: #5c3a1a;
+        }
+        .menu {
+            background-color: #2e9f3b;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="hero">
-    <img src="bavaria-promo.jpg" alt="Меблі Люкс">
-    <div class="overlay">
-      <h1>Меблі з вільхи і ясеня</h1>
-      <p>Інноваційний бот для зручного вибору меблів</p>
+    <div class="container">
+        <img src="bot_interface_page_fixed.png" alt="Меблі з вільхи та ясеня" class="background-image">
+        <div class="buttons">
+            <a href="https://t.me/nzk_helper_bot?start=catalog" class="button">Каталог</a>
+            <a href="https://t.me/nzk_helper_bot?start=bonus" class="button">Бонуси й гарантії</a>
+            <a href="https://t.me/nzk_helper_bot?start=menenger" class="button">Менеджер</a>
+            <a href="https://nzk.com.ua" class="button">Сайт</a>
+            <a href="https://t.me/nzk_helper_bot?start=menu" class="button menu">Меню</a>
+        </div>
     </div>
-  </div>
-
-  <div class="buttons">
-    <a href="https://t.me/nzk_helper_bot?start=catalog" class="button">Каталог</a>
-    <a href="https://t.me/nzk_helper_bot?start=bonus" class="button">Бонуси і гарантії</a>
-    <a href="https://t.me/nzk_helper_bot?start=menenger" class="button">Зв’язок з менеджером</a>
-    <a href="https://nzk.com.ua" class="button">Сайт</a>
-    <a href="https://t.me/nzk_helper_bot?start=menu" class="button menu-button">Меню</a>
-  </div>
-
 </body>
 </html>
