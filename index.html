@@ -1,9 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta http-equiv="refresh" content="0; URL='page1.html'" />
+    <meta charset="UTF-8">
+    <title>Дякуємо!</title>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '679660128372006');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=679660128372006&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 50px;
+        }
+        h1 {
+            color: #2e7d32;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .button {
+            margin-top: 30px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
+    <h1>Дякуємо!</h1>
+    <p>Ми підготували для вас персональну консультацію 👇</p>
+    <a class="button" href="https://t.me/nzk_helper_bot" onclick="fbq('track', 'Lead');">Перейти на бот</a>
 </body>
 </html>
