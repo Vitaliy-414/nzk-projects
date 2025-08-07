@@ -1,80 +1,59 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Форма зворотного зв'язку</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f9f9f9;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    form {
-      background: #ffffff;
-      padding: 20px 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: left;
-      min-width: 300px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      color: #555;
-    }
-
-    input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    input[type="submit"] {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #0056b3;
-    }
-
-    .thank-you {
-      margin-top: 15px;
-      color: green;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Залишити контакти</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        input[type="text"], input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <h2>Залиште своє ім’я і номер телефону – ми вам передзвонимо</h2>
-  <form>
-    <label for="name">Ваше ім’я:</label>
-    <input type="text" id="name" name="name">
-
-    <label for="phone">Ваш номер телефону:</label>
-    <input type="text" id="phone" name="phone">
-
-    <input type="submit" value="Готово">
-  </form>
-  <p class="thank-you">Дякую!</p>
+    <form class="form-container" action="#" method="post">
+        <h2>Залишіть свої дані</h2>
+        <input type="text" name="name" placeholder="Ваше ім’я" required>
+        <input type="tel" name="phone" placeholder="Номер телефону" required>
+        <button type="submit">Готово</button>
+    </form>
 </body>
 </html>
